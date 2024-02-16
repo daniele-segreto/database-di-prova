@@ -14,13 +14,13 @@ return new class extends Migration
         Schema::create('distriqts', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
-            $table->string('email');
+            $table->string('email')->unique();
             $table->string('password');
             $table->string('nome_prodotto');
             $table->integer('valutazione');
+            $table->string('citta');
             $table->string('regione');
             $table->string('nazione');
-            $table->string('tariffa_oraria');
             $table->decimal('tariffa_oraria', 10, 2);
             $table->decimal('tariffa_settimanale', 10, 2);
             $table->decimal('tariffa_mensile', 10, 2);

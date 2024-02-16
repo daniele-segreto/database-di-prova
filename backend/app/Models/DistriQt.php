@@ -9,7 +9,7 @@ class DistriQt extends Model
 {
     use HasFactory;
 
-    protected $table = 'distriqt';
+    protected $table = 'utenti';
     protected $primaryKey = 'id';
     public $timestamps = true;
 
@@ -19,9 +19,9 @@ class DistriQt extends Model
         'password',
         'nome_prodotto',
         'valutazione',
+        'citta',
         'regione',
         'nazione',
-        'tariffa_oraria',
         'tariffa_oraria',
         'tariffa_settimanale',
         'tariffa_mensile',
@@ -44,4 +44,5 @@ class DistriQt extends Model
     ];
 
     // Se hai relazioni con altre tabelle, puoi definirle qui
+
 }
